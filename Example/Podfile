@@ -1,3 +1,6 @@
+source 'https://github.com/LeiZong/ZZSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 target 'ZZAuthorKit_Category_Example' do

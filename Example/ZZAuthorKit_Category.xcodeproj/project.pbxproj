@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		004297DA479FDA85A14B1D56 /* Pods-ZZAuthorKit_Category_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZAuthorKit_Category_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZZAuthorKit_Category_Tests/Pods-ZZAuthorKit_Category_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		270D65C22AB4132ABF23C13A /* ZZAuthorKit_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZAuthorKit_Category.podspec; path = ../ZZAuthorKit_Category.podspec; sourceTree = "<group>"; };
-		2843653E2905512C65C4DBF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		270D65C22AB4132ABF23C13A /* ZZAuthorKit_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZZAuthorKit_Category.podspec; path = ../ZZAuthorKit_Category.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2843653E2905512C65C4DBF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3BE0C66B1D7A8C0A25D86899 /* Pods_ZZAuthorKit_Category_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZAuthorKit_Category_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ZZAuthorKit_Category_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZAuthorKit_Category_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		C8C31B0FD422268444764028 /* Pods-ZZAuthorKit_Category_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZAuthorKit_Category_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZAuthorKit_Category_Example/Pods-ZZAuthorKit_Category_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CBE9DDA2355854AE9D49900F /* Pods_ZZAuthorKit_Category_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZAuthorKit_Category_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90F612F8DC3A4F11FCB7698 /* Pods-ZZAuthorKit_Category_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZAuthorKit_Category_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZAuthorKit_Category_Tests/Pods-ZZAuthorKit_Category_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F078D4F0CC2DA30FA44D3F2A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F078D4F0CC2DA30FA44D3F2A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,10 +337,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZZAuthorKit_Category_Example/Pods-ZZAuthorKit_Category_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/ZZAPIsKit/ZZAPIsKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ZZAuthorKit_Category/ZZAuthorKit_Category.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZZAPIsKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZZAuthorKit_Category.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

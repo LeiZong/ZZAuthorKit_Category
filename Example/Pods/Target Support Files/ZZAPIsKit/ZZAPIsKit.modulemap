@@ -1,0 +1,6 @@
+framework module ZZAPIsKit {
+  umbrella header "ZZAPIsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
